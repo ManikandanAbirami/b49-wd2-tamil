@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Forms</title>
+    <link rel="stylesheet" type="text/css" href="register.css" />
+  </head>
+  <body>
+    <h1>Forms Introduction</h1>
+    <div>
+      <form action="/serverURL" method="POST">
+        <label for="name">Name:</label>
+        <input id="name" type="password" name="name" required />
+
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter only official email"
+          name="email"
+          required
+        />
+
+        <label for="adress">Address:</label>
+        <input type="text" />
+        <textarea rows="5" cols="15"></textarea>
+        <select id="country" name="country">
+          <option value="ind">India</option>
+          <option value="pak">Pakistan</option>
+          <option value="sri">Srilanka</option>
+          <option value="us">US</option>
+        </select>
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+  </body>
+</html>
