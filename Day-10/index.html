@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Cascading Style Sheet</title>
+    <style>
+      .inline-element {
+        display: inline;
+        background-color: dodgerblue;
+      }
+      .block-element {
+        display: block;
+        background-color: yellowgreen;
+      }
+      #guvi:hover {
+        color: red;
+        background-color: yellow;
+      }
+      a:link {
+        color: dodgerblue;
+        text-decoration: double;
+      }
+      a:visited {
+        color: red;
+      }
+      button:active {
+        background-color: green;
+        color: white;
+      }
+      li:nth-child(odd) {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inline-element">
+      This is div element which is BLOCK by nature - One
+    </div>
+    <div class="inline-element">
+      This is div element which is BLOCK by nature - Two
+    </div>
+    <p>This is paragraph element which is BLOCK by nature - One</p>
+    <p>This is paragraph element which is BLOCK by nature - Two</p>
+    <h1 class="inline-element">This heading</h1>
+    <h2 class="inline-element">This is heading</h2>
+    <span class="block-element">Span 1</span>
+    <span class="block-element">Span 2</span>
+    <a
+      id="guvi"
+      href="https://www.guvi.in/"
+      style="display: block"
+      target="_blank"
+      >Click me here - GUVI</a
+    >
+    <a href="https://www.w3schools.com/" target="_blank">Click me here - W3</a>
+    <a href="">Click me</a>
+    <button onclick="">Save me</button>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+  </body>
+</html>

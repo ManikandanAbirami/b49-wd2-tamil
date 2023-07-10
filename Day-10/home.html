@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        background-color: lightblue;
+        text-align: right;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        background-color: lightcoral;
+      }
+      .centered {
+        width: 200px;
+        height: 100px;
+        background-color: lightslategray;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is some content inside a box.</div>
+    <div class="box">Hi, hello!!</div>
+
+    <div class="container">
+      Outside
+      <div class="centered">Inside</div>
+    </div>
+  </body>
+</html>
