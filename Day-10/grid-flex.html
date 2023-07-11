@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Flex Documentation</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+      }
+      .item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: goldenrod;
+        padding: 10px;
+        margin: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid and Flex Layout</h1>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+  </body>
+</html>
