@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position demo</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 50px;
+        background-color: lightsalmon;
+        margin-bottom: 20px;
+        border: 1px solid black;
+      }
+      .static-box {
+        position: static;
+        top: 20px;
+        left: 20px;
+      }
+      .relative-box {
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+      .fixed-box {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
+      .absolute-box {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+      .sticky-box {
+        position: sticky;
+        top: 20px;
+      }
+      .gradient {
+        /* background: repeating-radial-gradient(
+          black,
+          black 5px,
+          white 5px,
+          white 10px
+        ); */
+        background: linear-gradient(to left, grey, yellow);
+      }
+    </style>
+  </head>
+  <body class="gradient">
+    <h1>CSS Position demo</h1>
+    <div class="box sticky-box">Sticky Box</div>
+    <div class="box static-box">Static Box</div>
+    <div class="box relative-box">Relative Box</div>
+    <div class="box fixed-box">Fixed Box</div>
+    <div class="box absolute-box">Absolute Box</div>
+  </body>
+</html>
