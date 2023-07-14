@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query!!</title>
+    <style>
+      /* .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: yellow;
+        padding: 20px;
+        color: black;
+      } */
+      @media (max-width: 600px) {
+        .container {
+          width: 100%;
+          background-color: red;
+          color: white;
+        }
+      }
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .container {
+          width: 70%;
+          background-color: blue;
+          color: white;
+        }
+      }
+      @media (min-width: 1025px) {
+        .container {
+          width: 50%;
+          background-color: green;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my website</h1>
+      <p>This is a sample website.</p>
+    </div>
+  </body>
+</html>

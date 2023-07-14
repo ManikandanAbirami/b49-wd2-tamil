@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query!!</title>
+    <style>
+      .nav-bar {
+        background-color: blue;
+        font-size: 20px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+      }
+      a {
+        color: white;
+      }
+      @media (max-width: 600px) {
+        .nav-bar {
+          background-color: red;
+          font-size: 16px;
+          flex-flow: column wrap;
+          align-content: end;
+        }
+      }
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .nav-bar {
+          background-color: goldenrod;
+          font-size: 16px;
+          flex-flow: column wrap;
+          align-content: center;
+        }
+      }
+      @media (min-width: 1025px) {
+        .nav-bar {
+          background-color: red;
+          font-size: 16px;
+          flex-flow: column wrap;
+          align-content: end;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </body>
+</html>
