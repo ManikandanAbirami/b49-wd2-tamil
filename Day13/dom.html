@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myDiv">
+      Welcome to B49 WD batch!!!!!
+      <!-- <p class="myClass" id="myParagraph"></p> -->
+      <!-- <span id="mySpan">MySpan Details</span> -->
+    </div>
+    <script>
+      const newSpan = document.createElement("span"); //Step 1
+      newSpan.setAttribute("id", "mySpan"); //Step 2
+      newSpan.innerText = "MySpan Details"; //Step 4
+
+      //Create a new element and set its attributes
+      const newElement = document.createElement("p");
+      newElement.setAttribute("class", "myClass");
+      newElement.setAttribute("id", "myParagraph");
+
+      //Set the text content of the new element
+      newElement.innerText = "Hello, world!!!! B49 WD Batch";
+
+      //Append the new element to an existing element with id "myDiv"
+      const existingElement = document.getElementById("myDiv"); //Step 3.1
+      existingElement.append(
+        newElement,
+        newSpan,
+        " Welcome to B49 WD batch!!!!!"
+      );
+      //   existingElement.appendChild(newSpan); // Step 3.2
+
+      const anchorElement = document.createElement("a");
+      anchorElement.setAttribute("href", "https://cssgridgarden.com/");
+      anchorElement.setAttribute("target", "_blank");
+      anchorElement.innerText = "Click me!";
+
+      //Append the new element to an existing element with id "myDiv"
+      const paraElement = document.getElementById("myParagraph");
+      paraElement.appendChild(anchorElement);
+    </script>
+  </body>
+</html>

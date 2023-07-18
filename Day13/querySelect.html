@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myDiv">
+      <p class="myClass">Item 2</p>
+      <p class="myClass">Item 3</p>
+      <p class="myClass">Item 4</p>
+    </div>
+    <div id="myDiv1">
+      <p class="myClass">Item 2</p>
+      <p class="myClass">Item 3</p>
+      <p class="myClass">Item 4</p>
+    </div>
+    <script>
+      const newElement = document.createElement("p");
+      newElement.setAttribute("class", "myClass");
+      newElement.setAttribute("id", "myParagraph");
+
+      newElement.innerHTML = `Hello, <span class="mySpan">world!!</span>`;
+
+      const parentEle = document.getElementById("myDiv");
+      parentEle.append(newElement);
+
+      const existingEle = document.querySelector("#myDiv");
+      const existingSpanEle = document.querySelector(".mySpan");
+      existingSpanEle.style.fontWeight = "bold";
+      existingSpanEle.style.color = "red";
+      //   console.log(existingEle);
+      existingEle.style.color = "blue";
+
+      //   const existingEleAll = document.querySelectorAll(".myClass");
+      //   //   console.log(existingEleAll);
+      //   existingEleAll.forEach((element) => {
+      //     element.style.fontWeight = "bold";
+      //     element.style.color = "red";
+      //   });
+    </script>
+  </body>
+</html>
