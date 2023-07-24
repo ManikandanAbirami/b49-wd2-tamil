@@ -8,7 +8,7 @@ setTimeout(() => {
 
     setTimeout(() => {
       console.log("Timer 3");
-      console.log("I m done!!!");
-    }, 2000);
+      console.log("Happt Independenca Day!!!");
+    }, 4000);
   }, 3000);
-}, 4000);
+}, 2000);
