@@ -7,13 +7,25 @@ let promiseObj = new Promise((resolve, reject) => {
 });
 
 //Consumer code
-promiseObj.then(
-  (val) => {
-    //code to be executed when is resolved
-    console.log("Product history received ", val);
-  },
-  (err) => {
-    //code to be executed when is rejected
-    console.log("Error $$$$$$$$$$  ", err);
-  }
-);
+//way 1
+// promiseObj.then(
+//   (val) => {
+//     //code to be executed when is resolved
+//     console.log("Product history received ", val);
+//   },
+//   (err) => {
+//     //code to be executed when is rejected
+//     console.log("Error $$$$$$$$$$  ", err);
+//   }
+// );
+
+//Way 2
+promiseObj.then((val) => {
+  //code to be executed when is resolved
+  console.log("Product history received ", val);
+});
+
+promiseObj.catch((err) => {
+  //code to be executed when is rejected
+  console.log("Error $$$$$$$$$$  ", err);
+});
