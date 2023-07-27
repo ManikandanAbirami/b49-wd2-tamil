@@ -1,5 +1,5 @@
 async function fetchData() {
-  const url = "https://restcountries.com/v3.1/all";
+  const url = "https://restcountries.com/v3.1/all"; //webAPI URL
   try {
     const response = await fetch(url);
     const data = await response.json();
