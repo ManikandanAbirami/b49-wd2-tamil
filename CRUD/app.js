@@ -1,10 +1,8 @@
 // Sample data to store initial records
-// let data = [
-//   { name: "Guvi WD2 Tamil B49", age: 10 },
-//   { name: "Guvi WD Tamil B49", age: 11 },
-// ];
-
-let data = [];
+let data = [
+  { name: "Guvi WD2 Tamil B49", age: 10 },
+  { name: "Guvi WD Tamil B49", age: 11 },
+];
 
 function displayData() {
   const dataRows = document.getElementById("dataRows");
@@ -78,6 +76,7 @@ document
   .addEventListener("submit", handleFormSubmit);
 
 document.getElementById("dataRows").addEventListener("click", (event) => {
+  alert(event.target.classList);
   if (event.target.classList.contains("delete-btn")) {
     handleDeleteClick(event);
   } else if (event.target.classList.contains("edit-btn")) {
