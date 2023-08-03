@@ -19,7 +19,7 @@ function afterReading() {
   playGames(afterPlaying);
 }
 
-function afterPlaying() {
+export function afterPlaying() {
   console.log("I m done, read book and played games!!!");
 }
 
