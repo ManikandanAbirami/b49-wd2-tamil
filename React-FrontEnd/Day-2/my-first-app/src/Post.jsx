@@ -3,7 +3,7 @@ import React from 'react'
 
 function Post() {
   return (
-    <div>Hey all!!!!, welcome to POST compoent!!!!! React</div>
+    <div>Hey all!!!!!!!!, welcome to POST compoent!!!!! React</div>
   )
 }
 
