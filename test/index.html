@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Figma Design to Website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to Our Awesome Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button id="ctaButton">Get Started</button>
+      </section>
+
+      <section class="features">
+        <h2>Features</h2>
+        <div class="tabs">
+          <button class="tab-button active" data-tab="tab1">Tab 1</button>
+          <button class="tab-button" data-tab="tab2">Tab 2</button>
+          <button class="tab-button" data-tab="tab3">Tab 3</button>
+        </div>
+        <div class="tab-content active" id="tab1">Content for Tab 1</div>
+        <div class="tab-content" id="tab2">Content for Tab 2</div>
+        <div class="tab-content" id="tab3">Content for Tab 3</div>
+      </section>
+
+      <button id="ctaButton">Get Started</button>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>This is a modal popup. Sign up for our newsletter!</p>
+        <input type="email" placeholder="Enter your email" />
+        <button>Sign Up</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

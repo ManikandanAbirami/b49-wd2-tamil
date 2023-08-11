@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guvi B49-WD3 CRUD Operation</title>
+    <!-- Include Bootstra CSS link-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-md-5">
+      <h1>Simple CRUD - Guvi B49-WD3</h1>
+      <form id="crudForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="text" class="form-control" id="age" />
+        </div>
+        <button class="btn btn-primary">Add</button>
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="dataRows">
+            <!-- Data rows will be added dynamically!!-->
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <!-- Include Bootstrat and custom JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
