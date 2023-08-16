@@ -16,8 +16,8 @@ function displayData() {
     <td>${item.name}</td>
     <td>${item.age}</td>
     <td>
-    <button type="button" class="btn btn-info" data-index="${index}">Edit</button>
-    <button type="button" class="btn btn-danger"  data-index="${index}">Delete</button>
+    <button type="button" class="btn btn-info" data-mani="${index}">Edit</button>
+    <button type="button" class="btn btn-danger"  data-mani="${index}">Delete</button>
     </td>
     </tr>
     `;
@@ -46,13 +46,13 @@ function handleFormSubmit(event) {
 }
 
 function handleDeleteClick(event) {
-  const index = event.target.getAttribute("data-index");
+  const index = event.target.getAttribute("data-mani");
   data.splice(index, 1);
   displayData();
 }
 
 function handleEditClick(event) {
-  const index = event.target.getAttribute("data-index");
+  const index = event.target.getAttribute("data-mani");
   const record = data[index];
 
   const nameInput = document.getElementById("name");
