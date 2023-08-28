@@ -3,12 +3,13 @@ import React, { useRef, useState } from 'react'
 function Ref() {
     const [count, setCount] = useState(0);
     const countRef = useRef(0);
-
+    console.log("CountRef: ",countRef);
     function handleClick () {
         // setCount(count+1);
+        
         countRef.current++;
 
-        //console.log("State: ", count);
+        // console.log("State: ", count);
         console.log("Ref ", countRef.current);
     }
   return (

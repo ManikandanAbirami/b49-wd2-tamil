@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
 
-const initialState = { totalToys: 0, toysSold: 0};
+const initialState = { totalToys: 10, toysSold: 0};
 
 function toyStoreReducer(state, action) {
     switch (action.type) {
