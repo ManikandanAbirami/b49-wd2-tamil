@@ -20,31 +20,10 @@ if (!fs.existsSync(outputFolder)) {
 // Log each request
 
 function logRequest(req, res, next) {
-  const currentTime = new Date();
-  const year = currentTime.getFullYear().toString();
-  const month = (currentTime.getMonth() + 1).toString();
-  const date = currentTime.getDate().toString();
-  const hrs = currentTime.getHours().toString();
-  const mins = currentTime.getMinutes().toString();
-  const secs = currentTime.getSeconds().toString();
-
-  const dateTimeForFileName = `${year}-${month}-${date}-${hrs}-${mins}-${secs}.txt`;
-
-  const filePath = path.join(outputFolder, dateTimeForFileName);
-
-  fs.writeFile(
-    filePath,
+  console.log(
     `Received ${req.method} request for ${
       req.url
-    } at ${new Date().toISOString()}`,
-    (err) => {
-      if (err) {
-        console.log(`Error creating file: ${err}`);
-        return;
-      }
-
-      console.log(`File created successfully at: ${filePath}`);
-    }
+    } at ${new Date().toISOString()}`
   );
   next();
 }
